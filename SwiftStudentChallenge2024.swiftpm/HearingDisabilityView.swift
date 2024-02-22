@@ -23,6 +23,8 @@ struct HearingDisabilityView: View {
                 
                 Text("Statistics:")
                 Text("Over 5% of the world's population – or 430 million people – require rehabilitation to address their 'disabling' hearing loss...")
+                
+                // Add NavigationLink to Apple accessiblity to MobilityDisabilityView
             }
             .padding()
         }
