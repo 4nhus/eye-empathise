@@ -5,12 +5,12 @@ struct ContentView: View {
         // Make sidebar hidden on app open
         NavigationSplitView {
             List {
-                NavigationLink("App Overview", destination: Text(""))
-                NavigationLink("Understanding Disability", destination: Text(""))
+                NavigationLink("App Overview", destination: AppOverviewView())
+                NavigationLink("Understanding Disability", destination: UnderstandingDisabilityView())
             }
             .navigationTitle("AccessibilityQuest")
         } detail: {
-            Text("")
+            AppOverviewView();
         }
     }
 }
