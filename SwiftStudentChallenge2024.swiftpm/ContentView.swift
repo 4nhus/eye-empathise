@@ -25,6 +25,7 @@ struct ContentView: View {
                     NavigationLink("Overview", destination: HearingDisabilityView())
                     NavigationLink("Accessibilitiy Technologies", destination: HearingDisabilityTechnologyView())
                     NavigationLink("Technology Challenge", destination: ChallengePlaceholderView())
+                    NavigationLink("Accessible Design Principles", destination: DesignPrinciplesHearingView())
                 } header: {
                     Label("Hearing Disabilities", systemImage: "ear")
                 }
