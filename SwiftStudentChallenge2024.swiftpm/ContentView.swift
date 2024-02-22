@@ -4,6 +4,7 @@ struct ContentView: View {
     @State private var visibilitySectionExpanded = false;
     var body: some View {
         // Make sidebar hidden on app open
+        // Add enum / class for static string constants
         NavigationSplitView {
             List {
                 Section {
@@ -16,6 +17,7 @@ struct ContentView: View {
                     NavigationLink("Overview", destination: VisualDisabilityView())
                     NavigationLink("Accessibilitity Technologies", destination: VisualDisabilityTechnologyView())
                     NavigationLink("Technology Challenge", destination: ChallengePlaceholderView())
+                    NavigationLink("Accessible Design Principles", destination: DesignPrinciplesVisualView())
                 } header: {
                     Label("Vision Disabilities", systemImage: "eye")
                 }
