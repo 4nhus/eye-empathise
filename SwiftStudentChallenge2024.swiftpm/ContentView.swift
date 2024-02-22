@@ -33,6 +33,7 @@ struct ContentView: View {
                     NavigationLink("Overview", destination: MobilityDisabilityView())
                     NavigationLink("Accessibilitiy Technologies", destination: MobilityDisabilityTechnologyView())
                     NavigationLink("Technology Challenge", destination: ChallengePlaceholderView())
+                    NavigationLink("Accessible Design Principles", destination: DesignPrinciplesMobilityView())
                 } header: {
                     Label("Mobility Disabilities", systemImage: "hand.draw")
                 }
