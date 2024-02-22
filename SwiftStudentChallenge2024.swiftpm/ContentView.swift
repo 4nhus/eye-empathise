@@ -11,6 +11,7 @@ struct ContentView: View {
                 NavigationLink("Challenge 1", destination: ChallengePlaceholderView())
                 NavigationLink("Hearing Disabilities", destination: HearingDisabilityView())
                 NavigationLink("Challenge 2", destination: ChallengePlaceholderView())
+                NavigationLink("Mobility Disabilities", destination: MobilityDisabilityView())
                 NavigationLink("Challenge 3", destination: ChallengePlaceholderView())
                 NavigationLink("Challenge 4", destination: ChallengePlaceholderView())
                 NavigationLink("Challenge 5", destination: ChallengePlaceholderView())
