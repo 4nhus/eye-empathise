@@ -1,24 +1,38 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var visibilitySectionExpanded = false;
     var body: some View {
         // Make sidebar hidden on app open
         NavigationSplitView {
             List {
-                NavigationLink("App Overview", destination: AppOverviewView())
-                NavigationLink("Understanding Disability", destination: UnderstandingDisabilityView())
-                NavigationLink("Visual Disabilities", destination: VisualDisabilityView())
-                NavigationLink("Apple Accessibilitiy Technologies for Visual Disabilities", destination: VisualDisabilityTechnologyView())
-                NavigationLink("Challenge 1", destination: ChallengePlaceholderView())
-                NavigationLink("Hearing Disabilities", destination: HearingDisabilityView())
-                NavigationLink("Apple Accessibilitiy Technologies for Hearing Disabilities", destination: HearingDisabilityTechnologyView())
-                NavigationLink("Challenge 2", destination: ChallengePlaceholderView())
-                NavigationLink("Mobility Disabilities", destination: MobilityDisabilityView())
-                NavigationLink("Apple Accessibilitiy Technologies for Mobility Disabilities", destination: MobilityDisabilityTechnologyView())
-                NavigationLink("Challenge 3", destination: ChallengePlaceholderView())
-                NavigationLink("Challenge 4", destination: ChallengePlaceholderView())
-                NavigationLink("Challenge 5", destination: ChallengePlaceholderView())
-                NavigationLink("Challenge 6", destination: ChallengePlaceholderView())
+                Section {
+                    NavigationLink("Overview", destination: AppOverviewView())
+                    NavigationLink("Understanding Disability", destination: UnderstandingDisabilityView())
+                } header: {
+                    Label("Introduction", systemImage: "info")
+                }
+                Section {
+                    NavigationLink("Overview", destination: VisualDisabilityView())
+                    NavigationLink("Accessibilitity Technologies", destination: VisualDisabilityTechnologyView())
+                    NavigationLink("Technology Challenge", destination: ChallengePlaceholderView())
+                } header: {
+                    Label("Vision Disabilities", systemImage: "eye")
+                }
+                Section {
+                    NavigationLink("Overview", destination: HearingDisabilityView())
+                    NavigationLink("Accessibilitiy Technologies", destination: HearingDisabilityTechnologyView())
+                    NavigationLink("Technology Challenge", destination: ChallengePlaceholderView())
+                } header: {
+                    Label("Hearing Disabilities", systemImage: "ear")
+                }
+                Section {
+                    NavigationLink("Overview", destination: MobilityDisabilityView())
+                    NavigationLink("Accessibilitiy Technologies", destination: MobilityDisabilityTechnologyView())
+                    NavigationLink("Technology Challenge", destination: ChallengePlaceholderView())
+                } header: {
+                    Label("Mobility Disabilities", systemImage: "hand.draw")
+                }
             }
             .navigationTitle("AccessibilityQuest")
         } detail: {
