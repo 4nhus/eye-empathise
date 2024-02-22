@@ -7,6 +7,7 @@ struct ContentView: View {
             List {
                 NavigationLink("App Overview", destination: AppOverviewView())
                 NavigationLink("Understanding Disability", destination: UnderstandingDisabilityView())
+                NavigationLink("Visual Disabilities", destination: VisualDisabilityView())
                 NavigationLink("Challenge 1", destination: ChallengePlaceholderView())
                 NavigationLink("Challenge 2", destination: ChallengePlaceholderView())
                 NavigationLink("Challenge 3", destination: ChallengePlaceholderView())

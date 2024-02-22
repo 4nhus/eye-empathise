@@ -16,6 +16,8 @@ struct UnderstandingDisabilityView: View {
             Text("Disability is a diverse and multifaceted condition that affects individuals in various ways, impacting their ability to engage in daily activities, communication, and interaction with the world around them. Disabilities can be present from birth or acquired due to illness or injury. This app aims to promote empathy and inclusivity by shedding light on the different experiences of those living with disabilities.")
                 .padding()
             // Add more info on each of the major types of disability
+            NavigationLink("Visual Disabilities", destination: VisualDisabilityView())
+            
         }
         .navigationTitle("Disabilities")
     }
