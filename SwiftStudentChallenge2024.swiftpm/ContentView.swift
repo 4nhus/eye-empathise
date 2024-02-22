@@ -7,6 +7,12 @@ struct ContentView: View {
             List {
                 NavigationLink("App Overview", destination: AppOverviewView())
                 NavigationLink("Understanding Disability", destination: UnderstandingDisabilityView())
+                NavigationLink("Challenge 1", destination: ChallengePlaceholderView())
+                NavigationLink("Challenge 2", destination: ChallengePlaceholderView())
+                NavigationLink("Challenge 3", destination: ChallengePlaceholderView())
+                NavigationLink("Challenge 4", destination: ChallengePlaceholderView())
+                NavigationLink("Challenge 5", destination: ChallengePlaceholderView())
+                NavigationLink("Challenge 6", destination: ChallengePlaceholderView())
             }
             .navigationTitle("AccessibilityQuest")
         } detail: {
