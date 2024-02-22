@@ -17,7 +17,6 @@ let package = Package(
             name: "SwiftStudentChallenge2024",
             targets: ["AppModule"],
             bundleIdentifier: "com.AnhIsAwesome.SwiftStudentChallenge2024",
-            teamIdentifier: "",
             displayVersion: "1.0",
             bundleVersion: "1",
             appIcon: .placeholder(icon: .map),
