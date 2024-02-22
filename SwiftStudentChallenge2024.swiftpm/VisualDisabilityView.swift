@@ -22,6 +22,8 @@ struct VisualDisabilityView: View {
             
             Text("Statistics:")
             Text("Approximately 285 million people are visually impaired worldwide...")
+            
+            // Add NavigationLink to Apple accessiblity to VisualDisabilityTechnologyView
         }
         .padding()
         .navigationTitle("Visual Disabilities")

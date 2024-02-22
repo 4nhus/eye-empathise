@@ -8,6 +8,7 @@ struct ContentView: View {
                 NavigationLink("App Overview", destination: AppOverviewView())
                 NavigationLink("Understanding Disability", destination: UnderstandingDisabilityView())
                 NavigationLink("Visual Disabilities", destination: VisualDisabilityView())
+                NavigationLink("Apple Accessibilitiy Technologies for Visual Disabilities", destination: VisualDisabilityTechnologyView())
                 NavigationLink("Challenge 1", destination: ChallengePlaceholderView())
                 NavigationLink("Hearing Disabilities", destination: HearingDisabilityView())
                 NavigationLink("Challenge 2", destination: ChallengePlaceholderView())
