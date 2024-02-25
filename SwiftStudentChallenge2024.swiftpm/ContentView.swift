@@ -12,36 +12,12 @@ struct ContentView: View {
                 } header: {
                     Label("Introduction", systemImage: "info")
                 }
-                Section {
-                    NavigationLink("Overview", destination: VisualDisabilityView())
-                    NavigationLink("Simulation", destination: VisualDisabilitySimulationView())
-                    NavigationLink("Accessibilitity Technologies", destination: VisualDisabilityTechnologyView())
-                    NavigationLink("Technology Challenge", destination: ChallengePlaceholderView())
-                    NavigationLink("Accessible Design Principles", destination: DesignPrinciplesVisualView())
-                } header: {
-                    Label("Vision Disabilities", systemImage: "eye")
-                }
-                Section {
-                    NavigationLink("Overview", destination: HearingDisabilityView())
-                    NavigationLink("Accessibilitiy Technologies", destination: HearingDisabilityTechnologyView())
-                    NavigationLink("Technology Challenge", destination: ChallengePlaceholderView())
-                    NavigationLink("Accessible Design Principles", destination: DesignPrinciplesHearingView())
-                } header: {
-                    Label("Hearing Disabilities", systemImage: "ear")
-                }
-                Section {
-                    NavigationLink("Overview", destination: MobilityDisabilityView())
-                    NavigationLink("Accessibilitiy Technologies", destination: MobilityDisabilityTechnologyView())
-                    NavigationLink("Technology Challenge", destination: ChallengePlaceholderView())
-                    NavigationLink("Accessible Design Principles", destination: DesignPrinciplesMobilityView())
-                } header: {
-                    Label("Mobility Disabilities", systemImage: "hand.draw")
-                }
             }
             .navigationTitle("AccessibilityQuest")
         } detail: {
             AppOverviewView();
             
         }
+        .navigationSplitViewStyle(.prominentDetail)
     }
 }
