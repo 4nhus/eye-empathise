@@ -1,7 +1,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var visibilitySectionExpanded = false;
     var body: some View {
         // Make sidebar hidden on app open
         // Add enum / class for static string constants
@@ -15,6 +14,7 @@ struct ContentView: View {
                 }
                 Section {
                     NavigationLink("Overview", destination: VisualDisabilityView())
+                    NavigationLink("Simulation", destination: VisualDisabilitySimulationView())
                     NavigationLink("Accessibilitity Technologies", destination: VisualDisabilityTechnologyView())
                     NavigationLink("Technology Challenge", destination: ChallengePlaceholderView())
                     NavigationLink("Accessible Design Principles", destination: DesignPrinciplesVisualView())
@@ -41,6 +41,7 @@ struct ContentView: View {
             .navigationTitle("AccessibilityQuest")
         } detail: {
             AppOverviewView();
+            
         }
     }
 }

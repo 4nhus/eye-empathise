@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum VisualDisabilityFilter {
+enum VisualDisabilityFilter: String, CaseIterable, Identifiable {
     case none
     // Red blind
     case protanopia
@@ -18,4 +18,5 @@ enum VisualDisabilityFilter {
     // Completely colour blind
     case achromatopsia
     case lowVision
+    var id: String { self.rawValue }
 }

@@ -31,6 +31,9 @@ let package = Package(
                 .landscapeLeft,
                 .portraitUpsideDown(.when(deviceFamilies: [.pad]))
             ],
+            capabilities: [
+                .camera(purposeString: "This app requires access to the camera to simulate visual disabilities.")
+            ],
             appCategory: .education
         )
     ],
