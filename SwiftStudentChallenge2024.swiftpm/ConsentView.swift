@@ -26,7 +26,6 @@ struct ConsentView: View {
                 
                 .buttonStyle(.bordered)
                 NavigationLink("Let's play!") {
-                    
                 }
                 .buttonStyle(.borderedProminent)
             }
