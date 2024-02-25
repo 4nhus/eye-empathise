@@ -15,8 +15,9 @@ struct ContentView: View {
             }
             .navigationTitle("AccessibilityQuest")
         } detail: {
-            AppOverviewView();
-            
+            NavigationStack {
+                AppOverviewView()
+            }
         }
         .navigationSplitViewStyle(.prominentDetail)
     }

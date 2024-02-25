@@ -36,7 +36,7 @@ struct InstructionView: View {
             Text("But most importantly... have fun!")
             // Fix alignment
             NavigationLink("Next") {
-                
+                RationaleView()
             }
             .buttonBorderShape(.capsule)
             .buttonStyle(.bordered)
