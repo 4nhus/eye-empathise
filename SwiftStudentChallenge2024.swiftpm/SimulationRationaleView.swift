@@ -25,14 +25,17 @@ struct SimulationRationaleView: View {
             Text("If you're experiencing visual diffficulteis or feel uncofmrotable while using the simulation, it';s perfectly fine to step away. You may also skip it completely.")
                 .padding(.bottom)
             // Fix alignment
-            NavigationLink("Skip simulation") {
-                VisualDisabilitySimulationView()
-            }
-            NavigationLink("Let's try") {
-                VisualDisabilitySimulationView()
+            HStack {
+                NavigationLink("Skip simulation") {
+                    VisualDisabilitySimulationView()
+                }
+                .buttonStyle(.bordered)
+                NavigationLink("Let's try") {
+                    VisualDisabilitySimulationView()
+                }
+                .buttonStyle(.borderedProminent)
             }
             .buttonBorderShape(.capsule)
-            .buttonStyle(.bordered)
         }
     }
 }
