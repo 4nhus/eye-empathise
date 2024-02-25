@@ -26,12 +26,11 @@ struct RationaleView: View {
                 .padding(.bottom)
             // Fix alignment
             NavigationLink("Next") {
-                
+                ConsentView()
             }
             .buttonBorderShape(.capsule)
             .buttonStyle(.bordered)
         }
-        
     }
 }
 
