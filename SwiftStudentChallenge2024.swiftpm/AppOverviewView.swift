@@ -16,8 +16,8 @@ struct AppOverviewView: View {
                 (Text("Eye ") + Text("Engage").bold())
                     .font(.largeTitle)
                 Text("Experience simulators and mini games to better understand visual impairment")
-                Button("Lets play!") {
-                    
+                NavigationLink("Lets play!") {
+                    InstructionView()
                 }
                 .buttonBorderShape(.capsule)
                 .buttonStyle(.borderedProminent)
