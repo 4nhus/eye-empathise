@@ -6,14 +6,12 @@ struct ContentView: View {
         // Add enum / class for static string constants
         NavigationSplitView {
             List {
-                Section {
-                    NavigationLink("Overview", destination: AppOverviewView())
-                    NavigationLink("Understanding Disability", destination: UnderstandingDisabilityView())
-                } header: {
-                    Label("Introduction", systemImage: "info")
-                }
+                NavigationLink("Overview", destination: AppOverviewView())
+                NavigationLink("Instructions", destination: InstructionView())
+                NavigationLink("Rationale", destination: RationaleView())
+                NavigationLink("Simulation", destination: VisualDisabilitySimulationView())
             }
-            .navigationTitle("AccessibilityQuest")
+            .navigationTitle(AppDetails.name)
         } detail: {
             NavigationStack {
                 AppOverviewView()

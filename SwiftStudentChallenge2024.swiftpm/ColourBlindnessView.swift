@@ -10,7 +10,6 @@ import SwiftUI
 struct ColourBlindnessView: View {
     var body: some View {
         VStack(alignment: .leading) {
-            
             Text("Did you know that colour blindness can affect reading and legibility?")
                 .font(.largeTitle)
                 .bold()
