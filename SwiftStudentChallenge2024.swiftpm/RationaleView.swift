@@ -26,7 +26,7 @@ struct RationaleView: View {
                 .padding(.bottom)
             // Fix alignment
             NavigationLink("Next") {
-                ConsentView()
+                SimulationRationaleView()
             }
             .buttonBorderShape(.capsule)
             .buttonStyle(.bordered)

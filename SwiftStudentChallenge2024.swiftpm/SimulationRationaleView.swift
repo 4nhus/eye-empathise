@@ -21,9 +21,13 @@ struct SimulationRationaleView: View {
                 .padding(.bottom)
            
             Text("By participating in these simulations, you're taking a significant step towards understanding and empathy. Let's use this knowledge to advocate for accessible environments and inclusive experiences for everyone.").padding(.bottom)
-                  
-                  Text("Together, we can make a difference—one insight at a time.").padding(.bottom)
+            
+            Text("If you're experiencing visual diffficulteis or feel uncofmrotable while using the simulation, it';s perfectly fine to step away. You may also skip it completely.")
+                .padding(.bottom)
             // Fix alignment
+            NavigationLink("Skip simulation") {
+                VisualDisabilitySimulationView()
+            }
             NavigationLink("Let's try") {
                 VisualDisabilitySimulationView()
             }
